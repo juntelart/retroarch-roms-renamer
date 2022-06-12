@@ -18,7 +18,7 @@ http://thumbnails.libretro.com/Nintendo%20-%20Nintendo%20Entertainment%20System/
 
 ### Execute script
 
-To execute script you shouls to pass 3 params:
+To execute script you shouls to pass 3 params. We recommend make backup of your folder firstly:
 * Libretro thumbnails URL (http://thumbnails.libretro.com/[system]/Named_Boxarts/)
 * Local ROMs path (E.g. /media/user/roms/Nintendo Entertainment System)
 * ROMs extension (E.g. .nes)
