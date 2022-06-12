@@ -37,7 +37,7 @@ try:
     for link in links:
         name = unquote(link['href'])
         name_without_extension = name.split(".png")[0]
-        key = name_without_extension.split("(")[0]
+        key = name_without_extension.split("(")[0].strip().lower()
         libretroNames[key] = name_without_extension
 except requests.exceptions.ConnectionError as exc:
     print("Error connectirng to thumbails url")
@@ -56,7 +56,7 @@ for file in glob.glob("*" + rom_extension):
         print("Forbidden character detected. Renaming...")
         os.rename(file_without_extension + rom_extension, clean_file_name + rom_extension)    
 
-    key = file_without_extension.split("(")[0]
+    key = file_without_extension.split("(")[0].strip().lower()
     if key in libretroNames:
         rightName = libretroNames[key] + rom_extension
         if (file != rightName):
