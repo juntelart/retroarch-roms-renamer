@@ -61,8 +61,8 @@ for file in glob.glob("*" + rom_extension):
         rightName = libretroNames[key] + rom_extension
         if (file != rightName):
             print(file + " -> " + rightName)
-            renamed_files_count+=1
             os.rename(clean_file_name + rom_extension, rightName)
+            renamed_files_count+=1
 
 print("Renamed " + str(renamed_files_count) + " files")
 
