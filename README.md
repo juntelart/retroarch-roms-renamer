@@ -1,6 +1,6 @@
 # Retroarch ROMs Renamer
 
-It's a little script to rename roms according to libretro names convenion for that the thmbnails download feature match with correct thumbnail
+It's a little script to rename roms according to libretro names convenion for that the thumbnails download feature match with correct thumbnail
 
 ## STEPS
 
