@@ -56,7 +56,7 @@ for file in glob.glob("*" + rom_extension):
         print("Forbidden character detected. Renaming...")
         os.rename(file_without_extension + rom_extension, clean_file_name + rom_extension)    
 
-    key = file_without_extension.split("(")[0].strip().lower()
+    key = clean_file_name.split("(")[0].strip().lower()
     if key in libretroNames:
         rightName = libretroNames[key] + rom_extension
         if (file != rightName):
