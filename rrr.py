@@ -6,7 +6,7 @@ from file_renamer import File_renamer
 def show_error(message):
     print(message);
     print("Usage: python3 " + sys.argv[0] + " \"http://url-to-thumbnails\" \"/local/path/to/files\" \".ext\"")
-    print("E.g. python3 " + sys.argv[0] + " \"http://thumbnails.libretro.com/Nintendo%20-%20Nintendo%20Entertainment%20System/Named_Boxarts/\" \"/media/r/USB/roms/Nintendo Entertainment System\" \".nes\"")
+    print("E.g. python3 " + sys.argv[0] + " \"http://thumbnails.libretro.com/Nintendo%20-%20Nintendo%20Entertainment%20System/Named_Boxarts/\" \"/media/roms/Nintendo Entertainment System\" \".nes\"")
 
 params_count = len(sys.argv)
 
